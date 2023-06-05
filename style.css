@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*************************** BAGGRUND *********************************/
+body {
+  background-image: url("img/baggrundinfiny.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************************** MENU *********************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fda1ca;
+  top: 0;
+  padding: 1rem 2rem;
+  box-shadow: 0 8px 28px 0 rgb(0 0 0 / 30%);
+}
+
+.logo {
+  z-index: 10;
+}
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #0f1f9e;
+  text-transform: uppercase;
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 120%;
+}
+a:hover {
+  color: #faea61;
+}
+a.active {
+  color: #cccc33;
+  font-weight: bold;
+}
+
+/*************************** BURGER MENU *********************************/
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #1050ec;
+  margin-bottom: 5px;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    z-index: 10;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #cccc33;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
