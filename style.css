@@ -6,10 +6,8 @@
 
 /*************************** BAGGRUND *********************************/
 body {
-  background-image: url("img/baggrundinfiny.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat-y;
+  position: relative;
+  background-color: azure;
 }
 
 img {
@@ -18,8 +16,21 @@ img {
   display: block;
 }
 
+.forsidebody {
+  background-image: url("img/baggrundinfiny.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+main {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
 /*************************** MENU *********************************/
 header {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +41,7 @@ header {
 }
 
 .logo {
-  z-index: 10;
+  z-index: 100;
 }
 .logo img {
   width: 40px;
@@ -130,4 +141,211 @@ a.active {
   nav.active .menu a {
     font-size: 24px;
   }
+}
+
+/*************************** FOOTER *********************************/
+footer {
+  background-repeat: no-repeat;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10%;
+  background-color: #faea61;
+  padding: 10%;
+  gap: 4%;
+}
+footer a {
+  width: 100px;
+}
+
+/* media query for mobile devices */
+@media (max-width: 800px) {
+  .grid_1 {
+    flex-direction: column;
+  }
+
+  .grid_1 {
+    flex-basis: 100%;
+  }
+}
+
+/* media query for desktop devices */
+@media (min-width: 800px) {
+  .grid_1 {
+    flex-direction: row;
+  }
+}
+/*************************** OVERSKRIFTER *********************************/
+@media screen and (max-width: 750px) {
+  .overskrifter {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .box_02 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1%;
+    column-gap: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 6%;
+    margin-bottom: 20%;
+  }
+  .overskrifter {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+.overskrifter {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  padding: 1%;
+  margin-top: 6%;
+  place-items: center;
+  text-align: center;
+  border: 8px solid #0f1f9e;
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 700;
+  font-size: 300%;
+  color: #0f1f9e;
+  text-transform: uppercase;
+  width: fit-content;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 700;
+  font-size: 150%;
+  color: #0f1f9e;
+  text-transform: uppercase;
+  background-color: azure;
+
+  /*border: 8px solid #0f1f9e; */
+}
+
+h3 {
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 700;
+  font-size: 150%;
+  color: #0f1f9e;
+  text-transform: uppercase;
+  background-color: azure;
+
+  /*border: 8px solid #0f1f9e; */
+}
+
+/*************************** FORSIDE *********************************/
+
+#midtext {
+  margin-top: 6%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+#midtext li {
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 700;
+  font-size: 800%;
+  color: #0f1f9e;
+  text-transform: uppercase;
+  list-style: none;
+}
+/*************************** .02 *********************************/
+.emner {
+  margin-top: 4%;
+}
+
+.temabeskrivelser {
+  margin-top: 6%;
+  font-family: "Avenir Next";
+  font-weight: lighter;
+  text-align: left;
+  width: fit-content;
+  background-color: azure;
+
+  /*border: 8px solid #0f1f9e; */
+}
+.box_02 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1%;
+  column-gap: 1%;
+}
+
+.gallery img {
+}
+
+.tekstom {
+  font-family: "Avenir Next";
+  font-weight: lighter;
+  text-align: left;
+  width: 50%;
+  width: fit-content;
+}
+
+@media screen and (min-width: 750px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1%;
+    column-gap: 1%;
+    margin-top: 6%;
+    margin-bottom: 20%;
+  }
+}
+
+/***************************  FORSIDE  *********************************/
+#scroll-container {
+}
+#pverti {
+  writing-mode: vertical-rl;
+  color: #faea61;
+  text-transform: uppercase;
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5cqw;
+  position: absolute;
+  z-index: -100;
+
+  display: flex;
+  /* width: 100%; */
+  gap: 4%;
+
+  margin: -8%;
+
+  /* animation  */
+  transform: translateY(-10%);
+  animation: animation_01 20s linear infinite;
+}
+
+@keyframes animation_01 {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/***************************  STREG  *********************************/
+
+.streg_02 {
+  margin-top: -100px;
+  border-left: 8px solid #0f1f9e;
+  height: 20%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
 }
