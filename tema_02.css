@@ -1,0 +1,147 @@
+/*************************** .02 *********************************/
+p {
+  font-family: "Avenir Next";
+  font-weight: lighter;
+  text-align: left;
+  background-color: azure;
+  padding-bottom: 2%;
+  font-size: 1.2cqw;
+}
+
+@media screen and (max-width: 750px) {
+  p {
+    font-family: "Avenir Next";
+    font-weight: lighter;
+    text-align: left;
+    background-color: azure;
+    padding-bottom: 2%;
+    font-size: 2cqw;
+  }
+}
+/* .02 - first tekst */
+.emner {
+  margin-top: 4%;
+}
+
+/* .02 - temabeskrivelserne */
+.temabeskrivelser {
+  margin-top: 6%;
+  font-family: "Avenir Next";
+  font-weight: lighter;
+  text-align: left;
+  width: fit-content;
+  background-color: azure;
+
+  /*border: 8px solid #0f1f9e; */
+}
+
+/* .02 - img propeties for grid_01 */
+#img_02_1 {
+  display: flex;
+  justify-content: center;
+}
+#img_02_1 img {
+  width: 50%;
+  border: 8px solid #0f1f9e;
+}
+
+#img_02_2 {
+  display: flex;
+  justify-content: center;
+}
+#img_02_2 img {
+  width: 80%;
+  border: 8px solid #0f1f9e;
+}
+
+.grid_02tekst {
+  font-family: "Avenir Next";
+  font-weight: lighter;
+  text-align: center;
+  width: fit-content;
+  margin-bottom: 8%;
+}
+
+.grid_02tekst img {
+  display: flex;
+  justify-content: center;
+}
+
+.grid_02 img {
+  border: 8px solid #0f1f9e;
+}
+
+@media screen and (min-width: 750px) {
+  .grid_01 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10%;
+  }
+
+  .grid_02 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 7%;
+    column-gap: 4%;
+    margin-bottom: 10%;
+  }
+}
+
+.tekstom {
+  font-family: "Avenir Next";
+  font-weight: lighter;
+  text-align: left;
+  width: fit-content;
+}
+
+.img_02_3 {
+  position: relative;
+}
+
+/* .02 - overlay  */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 8px solid #0f1f9e;
+  background-color: #faeb61c8; /* Adjust the opacity and color as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay a {
+  color: #faea61;
+  text-transform: uppercase;
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 700;
+  color: #fda1ca;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.img_02_3:hover .overlay {
+  opacity: 1;
+}
+
+.img_02_3 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/***************************  STREG  *********************************/
+
+.streg_02 {
+  margin-top: -100px;
+  border-left: 8px solid #0f1f9e;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}

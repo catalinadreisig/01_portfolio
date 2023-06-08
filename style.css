@@ -7,7 +7,7 @@
 /*************************** BAGGRUND *********************************/
 body {
   position: relative;
-  background-color: azure;
+  background-color: #f0ffff;
 }
 
 img {
@@ -24,8 +24,8 @@ img {
 }
 
 main {
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /*************************** MENU *********************************/
@@ -38,6 +38,7 @@ header {
   top: 0;
   padding: 1rem 2rem;
   box-shadow: 0 8px 28px 0 rgb(0 0 0 / 30%);
+  z-index: 100;
 }
 
 .logo {
@@ -125,9 +126,9 @@ a.active {
 
   nav.active .menu {
     display: block;
-    background-color: #cccc33;
+    background-color: #fda1ca;
     position: absolute;
-    top: 7%;
+    top: 100%;
     left: 0;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -145,22 +146,23 @@ a.active {
 
 /*************************** FOOTER *********************************/
 footer {
-  background-repeat: no-repeat;
+  position: relative;
+  bottom: 0;
+  margin-top: 25%;
+}
+footer a {
+}
 
+.footerindhold {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-top: 10%;
   background-color: #faea61;
   padding: 10%;
   gap: 4%;
 }
-footer a {
-  width: 100px;
-}
-
 /* media query for mobile devices */
 @media (max-width: 800px) {
   .grid_1 {
@@ -194,10 +196,6 @@ footer a {
     margin-top: 6%;
     margin-bottom: 20%;
   }
-  .overskrifter {
-    margin-left: 4%;
-    margin-right: 4%;
-  }
 }
 
 .overskrifter {
@@ -212,102 +210,76 @@ h1 {
   border: 8px solid #0f1f9e;
   font-family: "franklin-gothic-atf", sans-serif;
   font-weight: 700;
-  font-size: 300%;
+  font-size: 4cqw;
   color: #0f1f9e;
   text-transform: uppercase;
   width: fit-content;
   background-color: azure;
-  display: flex;
-  justify-content: center;
 }
 
 h2 {
   font-family: "franklin-gothic-atf", sans-serif;
   font-weight: 700;
-  font-size: 150%;
+  font-size: 2cqw;
   color: #0f1f9e;
   text-transform: uppercase;
   background-color: azure;
-
-  /*border: 8px solid #0f1f9e; */
 }
 
 h3 {
   font-family: "franklin-gothic-atf", sans-serif;
   font-weight: 700;
-  font-size: 150%;
+  font-size: 2cqw;
   color: #0f1f9e;
   text-transform: uppercase;
   background-color: azure;
+}
 
-  /*border: 8px solid #0f1f9e; */
+/*03.04.01 osv  */
+h4 {
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 700;
+  font-size: 2cqw;
+  color: #0f1f9e;
+  text-transform: uppercase;
 }
 
 /*************************** FORSIDE *********************************/
-
 #midtext {
-  margin-top: 6%;
   margin-bottom: 20%;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 #midtext li {
   font-family: "franklin-gothic-atf", sans-serif;
   font-weight: 700;
-  font-size: 800%;
+  font-size: 10cqw;
   color: #0f1f9e;
   text-transform: uppercase;
   list-style: none;
 }
-/*************************** .02 *********************************/
-.emner {
+
+#imgcred {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 15;
   margin-top: 4%;
 }
 
-.temabeskrivelser {
-  margin-top: 6%;
-  font-family: "Avenir Next";
-  font-weight: lighter;
-  text-align: left;
-  width: fit-content;
-  background-color: azure;
-
-  /*border: 8px solid #0f1f9e; */
-}
-.box_02 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1%;
-  column-gap: 1%;
-}
-
-.gallery img {
-}
-
-.tekstom {
-  font-family: "Avenir Next";
-  font-weight: lighter;
-  text-align: left;
+#imgcred img {
   width: 50%;
-  width: fit-content;
 }
 
-@media screen and (min-width: 750px) {
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1%;
-    column-gap: 1%;
-    margin-top: 6%;
-    margin-bottom: 20%;
-  }
+/***************************  FORSIDE - scroll  *********************************/
+.scroll-container {
+  overflow: hidden;
 }
+.pverti {
+  overflow: hidden;
 
-/***************************  FORSIDE  *********************************/
-#scroll-container {
-}
-#pverti {
   writing-mode: vertical-rl;
   color: #faea61;
   text-transform: uppercase;
@@ -322,30 +294,69 @@ h3 {
   /* width: 100%; */
   gap: 4%;
 
-  margin: -8%;
+  margin: -10%;
 
   /* animation  */
-  transform: translateY(-10%);
-  animation: animation_01 20s linear infinite;
+  transform: translateY(-100%);
+  animation: animation_01 30s linear infinite;
 }
 
 @keyframes animation_01 {
   0% {
-    transform: translateY(0%);
+    transform: translateY(-100%);
   }
   100% {
-    transform: translateY(100%);
+    transform: translateY(0%);
   }
 }
 
-/***************************  STREG  *********************************/
+.pverti2 {
+  overflow: hidden;
 
-.streg_02 {
-  margin-top: -100px;
-  border-left: 8px solid #0f1f9e;
-  height: 20%;
+  writing-mode: vertical-rl;
+  color: #faea61;
+  text-transform: uppercase;
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5cqw;
   position: absolute;
-  left: 50%;
-  margin-left: -3px;
-  z-index: -1;
+  z-index: -100;
+
+  display: flex;
+  width: 100%;
+  gap: 4%;
+  margin-left: -10%;
+  /* animation  */
+  transform: translateY(-100%);
+  animation: animation_01 30s linear infinite;
+}
+
+/****************************** BUTTON ********************************/
+.center_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+.site_button {
+  color: #faea61;
+  text-transform: uppercase;
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 2% 2%;
+  border: 8px solid #0f1f9e;
+  font-size: 150%;
+  text-transform: uppercase;
+  transition: background 0.275s;
+  background: #fda1ca;
+}
+
+.site_button:hover,
+.site_button:focus {
+  border: 8px solid #0f1f9e;
+  background: #faea61;
+  color: #fda1ca;
+  cursor: pointer;
 }

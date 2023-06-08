@@ -1,0 +1,9 @@
+.streg_04 {
+  margin-top: -100px;
+  border-left: 8px solid #0f1f9e;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}

@@ -1,0 +1,33 @@
+/***************************  STREG  *********************************/
+.streg_03 {
+  margin-top: -100px;
+  border-left: 8px solid #0f1f9e;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+.grid_03_01 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 6%;
+  column-gap: 6%;
+  margin-bottom: 10%;
+}
+
+.tekstbokse {
+  display: flex;
+  background-color: #faea61;
+  border: 8px solid #0f1f9e;
+  padding: 3%;
+}
+
+.tekstbokse p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: #faea61;
+}
