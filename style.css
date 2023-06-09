@@ -82,9 +82,8 @@ nav {
 a:hover {
   color: #faea61;
 }
-a.active {
-  color: #cccc33;
-  font-weight: bold;
+a:active {
+  color: #faea61;
 }
 
 /*************************** BURGER MENU *********************************/
@@ -149,8 +148,11 @@ footer {
   position: relative;
   bottom: 0;
   margin-top: 25%;
+  background-color: #faea61;
+  padding: 10%;
 }
 footer a {
+  width: 10%;
 }
 
 .footerindhold {
@@ -158,11 +160,9 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: #faea61;
-  padding: 10%;
   gap: 4%;
 }
+
 /* media query for mobile devices */
 @media (max-width: 800px) {
   .grid_1 {
@@ -240,7 +240,7 @@ h4 {
   font-family: "franklin-gothic-atf", sans-serif;
   font-weight: 700;
   font-size: 2cqw;
-  color: #0f1f9e;
+  color: #fda1ca;
   text-transform: uppercase;
 }
 
