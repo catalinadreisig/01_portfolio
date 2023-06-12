@@ -244,6 +244,14 @@ h4 {
   text-transform: uppercase;
 }
 
+h5 {
+  font-family: "franklin-gothic-atf", sans-serif;
+  font-weight: 700;
+  font-size: 2cqw;
+  color: #0f1f9e;
+  text-transform: uppercase;
+}
+
 /*************************** FORSIDE *********************************/
 #midtext {
   margin-bottom: 20%;
@@ -255,7 +263,7 @@ h4 {
 #midtext li {
   font-family: "franklin-gothic-atf", sans-serif;
   font-weight: 700;
-  font-size: 10cqw;
+  font-size: 9cqw;
   color: #0f1f9e;
   text-transform: uppercase;
   list-style: none;

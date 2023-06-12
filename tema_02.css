@@ -39,6 +39,7 @@ p {
 #img_02_1 {
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 }
 #img_02_1 img {
   width: 50%;
@@ -48,6 +49,7 @@ p {
 #img_02_2 {
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 }
 #img_02_2 img {
   width: 80%;
@@ -96,6 +98,7 @@ p {
 
 .img_02_3 {
   position: relative;
+  margin-top: 2%;
 }
 
 /* .02 - overlay  */
