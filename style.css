@@ -252,6 +252,16 @@ h5 {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 800px) {
+  h5 {
+    font-family: "franklin-gothic-atf", sans-serif;
+    font-weight: 700;
+    font-size: 2cqw;
+    color: #0f1f9e;
+    text-transform: uppercase;
+    background-color: azure;
+  }
+}
 /*************************** FORSIDE *********************************/
 #midtext {
   margin-bottom: 20%;
@@ -347,6 +357,7 @@ h5 {
   margin-top: 8%;
   margin-bottom: 8%;
 }
+
 .site_button {
   color: #faea61;
   text-transform: uppercase;
@@ -355,10 +366,26 @@ h5 {
   font-style: normal;
   padding: 2% 2%;
   border: 8px solid #0f1f9e;
-  font-size: 150%;
+  font-size: 2cqw;
   text-transform: uppercase;
   transition: background 0.275s;
   background: #fda1ca;
+}
+
+@media screen and (max-width: 800px) {
+  .site_button {
+    color: #faea61;
+    text-transform: uppercase;
+    font-family: "franklin-gothic-atf", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 2% 2%;
+    border: 8px solid #0f1f9e;
+    font-size: 3cqw;
+    text-transform: uppercase;
+    transition: background 0.275s;
+    background: #fda1ca;
+  }
 }
 
 .site_button:hover,
