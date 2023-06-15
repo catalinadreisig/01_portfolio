@@ -163,23 +163,6 @@ footer a {
   gap: 4%;
 }
 
-/* media query for mobile devices */
-@media (max-width: 800px) {
-  .grid_1 {
-    flex-direction: column;
-  }
-
-  .grid_1 {
-    flex-basis: 100%;
-  }
-}
-
-/* media query for desktop devices */
-@media (min-width: 800px) {
-  .grid_1 {
-    flex-direction: row;
-  }
-}
 /*************************** OVERSKRIFTER *********************************/
 @media screen and (max-width: 750px) {
   .overskrifter {
